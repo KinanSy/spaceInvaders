@@ -121,7 +121,7 @@ namespace SpaceInvaders
             // add new game objects
             gameObjects.UnionWith(pendingNewGameObjects);
             pendingNewGameObjects.Clear();
-
+           
 
             // if space is pressed
             if (keyPressed.Contains(Keys.Space))
@@ -133,6 +133,7 @@ namespace SpaceInvaders
                 // release key space (no autofire)
                 ReleaseKey(Keys.Space);
             }
+
 
             // update each game object
             foreach (GameObject gameObject in gameObjects)
